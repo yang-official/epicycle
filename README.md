@@ -1,4 +1,10 @@
-# epicycle
+# Epicycle
+
+Intelligent peer-to-peer bike sharing and bike rental for greener, more equitable, and more efficient mobility.
+
+![](https://media.treehugger.com/assets/images/2014/11/Bikes_Most_Efficient.png)
+
+![](https://www.exploratorium.edu/cycling/images/efficeincy.gif)
 
 ## Project setup
 ```
@@ -14,16 +20,3 @@ yarn run serve
 ```
 yarn run build
 ```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
