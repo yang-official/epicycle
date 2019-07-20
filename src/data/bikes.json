@@ -6,8 +6,8 @@
     "price": 20,
     "priceCurrency": "$",
     "interval": "day",
-    "lat": 48.884211,
-    "lng": 2.346890
+    "lat": 37.7749,
+    "lng": -122.4194
   },
   {
     "id": 148,
@@ -16,8 +16,8 @@
     "price": 1,
     "priceCurrency": "$",
     "interval": "hour",
-    "lat": 48.885707,
-    "lng": 2.343543
+    "lat": 37.7721,
+    "lng": -122.4499
   },
   {
     "id": 201,
@@ -26,8 +26,8 @@
     "price": 15,
     "priceCurrency": "$",
     "interval": "day",
-    "lat": 48.885312,
-    "lng": 2.341225
+    "lat": 37.7788,
+    "lng": -122.4194
   },
   {
     "id": 205,
@@ -36,18 +36,18 @@
     "price": 15,
     "priceCurrency": "$",
     "interval": "day",
-    "lat": 48.881840,
-    "lng": 2.343371
+    "lat": 37.7810,
+    "lng": -122.4716
   },
   {
     "id": 210,
     "name": "Dave's GPS enabled electric bike",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0799/9645/products/16_-_Right_2048x.jpg?v=1547158720",
-    "price": 5,
+    "price": 100,
     "priceCurrency": "$",
-    "interval": "day",
-    "lat": 48.888839,
-    "lng": 2.339208
+    "interval": "month",
+    "lat": 37.7689,
+    "lng": -122.4444
   },
   {
     "id": 211,
@@ -56,7 +56,7 @@
     "price": 5,
     "priceCurrency": "$",
     "interval": "mile",
-    "lat": 48.827855,
-    "lng": 2.350774
+    "lat": 37.7751,
+    "lng": -122.4388
   }
 ]

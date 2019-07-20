@@ -26,7 +26,7 @@ export default {
 <style scoped>
 .bike-panel {
   margin: 10px;
-  background-color: #eee;
+  background-color: #98FB98;
   border-radius: 3px;
   padding: 10px;
 }
@@ -55,7 +55,7 @@ export default {
   padding: 8px;
   font-size: 18px;
   cursor: pointer;
-  background-color: #FD5C63;
+  background-color: #228B22;
   width: 100%;
 }
 </style>
