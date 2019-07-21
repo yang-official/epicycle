@@ -3,16 +3,21 @@
     <div class="bike-info">
       <h3>{{ selectedBike.name }}</h3>
       <p>{{ selectedBike.priceCurrency }}{{ selectedBike.price }} per {{ selectedBike.interval }}</p>
-      <button>Book now</button>
-      <br>
-      <button>Unlock now</button>
+      <button onclick="window.location.href='smartcar.html'">Book now</button>
+      <button onclick="window.location.href='smartcar.html'">Unlock now</button>
     </div>
     <div class="bike-banner" v-bind:style="{ backgroundImage: `url(${selectedBike.imageUrl})` }"></div>
     <div class="bike-map" v-bind:style="{ backgroundImage: `url(${mapUrl})`}"></div>
+    <HereMap
+      appId="xj9v65pmNOxfqzHPSkUK"
+      appCode="wp_RYYOngqNGufF4IMKF6A"
+      lat="37.7397"
+      lng="-121.4252"></HereMap>
   </div>
 </template>
 
 <script>
+import HereMap from './HereMap.vue'
 export default {
   props: [ 'selectedBike' ],
   computed: {
@@ -26,7 +31,7 @@ export default {
 <style scoped>
 .bike-panel {
   margin: 10px;
-  background-color: #eee;
+  background-color: #98FB98;
   border-radius: 3px;
   padding: 10px;
 }
@@ -55,7 +60,7 @@ export default {
   padding: 8px;
   font-size: 18px;
   cursor: pointer;
-  background-color: #FD5C63;
+  background-color: #228B22;
   width: 100%;
 }
 </style>
