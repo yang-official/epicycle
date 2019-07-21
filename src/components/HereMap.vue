@@ -1,6 +1,6 @@
 <template>
     <div class="here-map">
-        <div ref="map" style="width: 100%; height: 300px"></div>
+        <div ref="map" style="width: 100%; height: 250px"></div>
     </div>
 </template>
 
@@ -33,6 +33,7 @@
                     zoom: 14,
                 }
             );
+            this.map.addObject(new H.map.Marker({lat: this.lat, lng: this.lng }));
             var events = new H.mapevents.MapEvents(this.map);
             var behavior = new H.mapevents.Behavior(events);
             var ui = H.ui.UI.createDefault(this.map, layers);
