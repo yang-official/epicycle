@@ -7,11 +7,11 @@
       <button onclick="window.location.href='smartcar.html'">Unlock now</button>
     </div>
     <div class="bike-banner" v-bind:style="{ backgroundImage: `url(${selectedBike.imageUrl})` }"></div>
-    <div class="bike-map" v-bind:style="{ backgroundImage: `url(${mapUrl})`}"></div>
+    <!--<div class="bike-map" v-bind:style="{ backgroundImage: `url(${mapUrl})`}"></div>-->
     <HereMap
       appId="xj9v65pmNOxfqzHPSkUK"
       appCode="wp_RYYOngqNGufF4IMKF6A"
-      lat="37.7397"
+      lat="37.7396"
       lng="-121.4252"></HereMap>
   </div>
 </template>
@@ -20,6 +20,9 @@
 import HereMap from './HereMap.vue'
 export default {
   props: [ 'selectedBike' ],
+  components: {
+            HereMap
+        },
   computed: {
     mapUrl: function(){
       return `http://maps.googleapis.com/maps/api/staticmap?center=${this.selectedBike.lat},${this.selectedBike.lng}&zoom=14&size=480x250&markers=${this.selectedBike.lat},${this.selectedBike.lng}&key=AIzaSyCP18cD4FwL37eXgcB1MbLNtG9ktbkzdlw`

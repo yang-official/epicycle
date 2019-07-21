@@ -14,7 +14,6 @@
             };
         },
         props: {
-            selectedBike: Object,
             appId: String,
             appCode: String
         },
@@ -28,7 +27,7 @@
                 this.$refs.map,
                 layers.normal.map,
                 {
-                    center: {lat: this.lat, lng: this.lng},
+                    center: {lat: "37.7396", lng: "-121.4252"},
                     zoom: 14,
                 }
             );
