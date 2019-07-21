@@ -1,6 +1,6 @@
 <template>
     <div class="here-map">
-        <div ref="map" style="width: 75%; height: 600px"></div>
+        <div ref="map" style="width: 100%; height: 300px"></div>
     </div>
 </template>
 
@@ -15,7 +15,9 @@
         },
         props: {
             appId: String,
-            appCode: String
+            appCode: String,
+            lat: String,
+            lng: String
         },
         mounted() {
             this.platform = new H.service.Platform({
@@ -27,7 +29,7 @@
                 this.$refs.map,
                 layers.normal.map,
                 {
-                    center: {lat: "37.7396", lng: "-121.4252"},
+                    center: {lat: this.lat, lng: this.lng},
                     zoom: 14,
                 }
             );
